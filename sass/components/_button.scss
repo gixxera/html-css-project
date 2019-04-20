@@ -1,0 +1,51 @@
+.btn {
+    &:link, &:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        transition: all .2s;
+        position: relative; 
+      }
+
+    &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2); 
+
+    &::after {
+        transform: scale(1.5);
+        opacity: 0; 
+    }
+  }
+  
+    &:active {
+    transform: translateY(-1px);
+   }
+  
+    &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+}
+
+.btn-white {
+    background-color: $color-white;
+    color: #5658a7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 100px;
+    margin-top: 25px;
+    animation-name: moveButtonWhite;
+    animation-duration: 2s;
+
+    &::after {
+        background-color: $color-white; 
+    }
+   }

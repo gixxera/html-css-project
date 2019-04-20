@@ -1,0 +1,28 @@
+.header {
+    margin: 15px;
+    background-image: linear-gradient(to right bottom, rgba($color-light, 0.8), rgba($color-dark, 0.8)), url(../images/albena.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+  
+  
+.logo-box {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem; 
+        img {
+            width: 3.5rem;
+            opacity: 0.6;
+            border-radius: 5px;
+        }
+}
+  
+.head-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
